@@ -1,0 +1,486 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+    
+body{
+    font-family: 'Roboto';
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebeb;
+}
+
+header{
+    background-color: #EAC926;
+    text-align: center;
+    width: 100vw;
+}
+
+.header-logo{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img{
+    width: 50%;
+    padding: 20px;
+}
+
+.input-search-bar{
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    height: 20px;
+}
+
+.search-bar{
+    position: relative;
+    width: 50%;
+    padding: 5px;
+}
+
+.search-bar input{
+    width: 100%;
+    padding-right: 20px;
+    margin-left: 5px;
+}
+
+.fa-search{
+    background-color:white;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+.top-half p{
+    display:none;
+}
+
+.burger-menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.burger-menu i {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.actions{
+    display: none;
+}
+
+.login{
+    display: none;
+}
+
+.banner img{
+    width: 100vw;
+}
+
+main{
+    text-align: center;
+    width: 90%;
+}
+
+main section{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    justify-content: space-between;
+}
+
+main article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.sections{
+    font-size: 24px;
+    color:#666;
+    margin-top:1%;
+}
+
+main article img{
+    width: 100%;
+}
+
+.product:hover .description{
+    display: block;
+    opacity: 1;
+    height: 20px;
+    transition: all 500ms ease;
+}
+
+.product:hover{
+    transform:scale(1.05);
+    transition: all 500ms ease;
+}
+
+.producto-descripcion{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    /* border-bottom: 20px solid #ebebeb; */
+    text-align: left;
+    position:relative;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.price-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.fa-truck{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: 500ms ease;
+}
+
+/* .fa-truck:hover{
+    transform: rotate(-90deg) scale(1.25);
+} */
+
+.precio{
+    font-size: 18px;
+    flex-basis: 30%;
+    margin-right: 5px;
+    transition: all 500ms ease-out;
+    
+}
+
+.precio1{
+    opacity: 0;
+    transition: all 500ms ease-out;
+    font-size: .5rem;
+    color: #39b54a;
+    padding-right: 10%;
+    position: relative;
+    left:-85px;
+}
+
+.product:hover .descuento{
+    font-size: 1.5rem;
+    
+}
+
+.product:hover .precio{
+text-decoration: line-through;
+opacity: 0.2;
+}
+
+.product:hover .precio1 {
+    opacity: 1;
+    font-size: 1.5rem;
+    left:0px;
+}
+
+.product:hover .fa-truck{
+    transform: rotate(-90deg);
+}
+
+.descuento{
+    font-size:16px;
+    color: #39b54a;
+    flex-basis: 70%;
+    transition: all 500ms ease-out;
+}
+
+.description{
+    display: none;
+}
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+#form-login input {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid #ebebeb;
+    font-size: 12px;
+    padding: 4px 10px;
+    margin-left: 15px;
+    border-bottom: 1px solid  #666;
+  }
+
+
+#form-login button {
+    background-color: #1259c3;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    border: 1px solid #1259c3;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+#form-login button:hover{
+    background-color: #0022AA;
+    transform: scale(1.05);
+}  
+
+#form-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: left;
+  }
+  
+#form-register input {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid #ebebeb;
+    font-size: 12px;
+    padding: 4px 10px;
+    margin-left: 15px;
+    border-bottom: 1px solid  #666;
+  }
+
+#form-register #profilepic{
+    border-bottom: none;
+}
+
+#form-register label {
+    padding-top: 10px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+.perfil-de-usuario {
+    border-bottom: 1px solid  #666;
+    display: flex;
+    flex-direction: column;
+  }
+  
+#form-register .etiqueta {
+    font-weight: normal;
+  }
+  
+.register-intereses {
+    padding: 5px;
+    border-bottom: 1px solid #666;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  
+#form-register .register-intereses input {
+    margin-bottom: 5px;
+  }
+
+  
+.button-register {
+    padding-top: 15px;
+    text-align: center;
+  }
+
+  .button-register input {
+    background-color: #1259c3;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    border: 1px solid #1259c3;
+    padding: 10px 10px;
+    width: 75px;
+  }
+  .button-register input:hover{
+    background-color: #0022AA;
+    transform: scale(1.05);
+  } 
+
+footer{
+    background:white;
+    text-align: center;
+    color: #666;
+    padding: 20px;
+    width: 100%;
+}
+
+footer .articulos i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:#1259c3;
+}
+
+.copyright{
+    padding-top: 15px;
+}
+
+@keyframes tarjetazo{
+    0%{padding-right: 50px; opacity: 0.2;} 
+    50%{padding-right: 0px; opacity: 0.8;} 
+    100%{padding-left: 50px; opacity: 0.2;}
+}
+
+@keyframes bumpy{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.5);}
+}
+
+@media (min-width: 361px){s
+    .top-half{
+        justify-items: center;
+        display: flex;
+    }
+    .top-half p{
+        display:block;
+    }
+    .header-logo{
+        flex-basis: 70%;
+        justify-content: space-between;
+    }
+    .header-logo img{
+        padding: 5px;
+        height: 60px;
+        width: auto;
+    }
+    header aside{
+        flex-basis: 30%;
+    }
+    .headeractions{
+        display: flex;       
+        justify-content: space-around;
+        padding: 12px;
+    }
+    .actions{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .actions li{
+        padding-left: 10px;
+    }
+    .actions li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .actions li a:hover{
+        color: rgb(29, 46, 115);
+        font-size: larger;
+    }
+    .user{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .user li{
+        padding: 10px;
+    }
+    .user li a{
+        text-decoration: none;
+        color: black;
+    }
+    .user li a:hover{
+        color: rgb(29, 46, 115);
+        font-size: larger;
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+    main article{
+        width: 45%;
+        margin-left: 2.5%;
+        transition: all 500ms ease;
+    }
+
+    main article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .description {
+        font-size: 16px;
+        color: #666;
+        display: block;
+        height: 20px;
+        opacity: 0;
+        transition: all 500ms ease;
+      }
+      .product:hover .description {
+        opacity: 1;
+        height: 20px;
+      }
+      #form-login {
+        margin: auto;
+        width: 80vw;
+      }
+    
+      #form-register {
+        margin: auto;
+        width: 80vw;
+      }
+}
+
+@media (min-width: 769px){
+    .header-logo img{
+        height: 80px;
+    }
+    main section{
+        padding: 5px;
+    }
+    main article{
+        justify-content: space-between;
+        align-content: space-between;
+        width: 20vw;
+        margin-left: 1%;
+    }
+    footer .articulos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer #card:hover {
+        transition-duration: 400ms;
+        color: #EAC926;
+        transform:scale(1.25);
+        animation: tarjetazo 600ms infinite alternate ease-out;
+    }
+
+    footer #gift:hover{ 
+        transition-duration: 400ms;
+        color: #EAC926;
+        transform:rotate(360deg) scale(1.25);
+    }
+    footer #shield:hover{ 
+        transition-duration: 0.4s;
+        color: #EAC926;
+        animation: bumpy 600ms infinite alternate;
+    }
+
+    #form-login {
+        width: 50vw;
+      }
+    
+      #form-register {
+        width: 50vw;
+      }
+}
