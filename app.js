@@ -13,7 +13,11 @@ app.get('/register',(req,res)=>{res.sendFile(__dirname+'/views/register.html');}
 
 app.get('/login', (req,res)=>{res.sendFile(__dirname + '/views/login.html');});
 
-app.listen(3000, ()=>{console.log('Server corriendo en puerto 3000');});
+// app.listen(3000, ()=>{console.log('Server corriendo en puerto 3000');});
+
+app.listen(process.env.PORT || 3000,function(){
+    console.log("Server ruining on :3000");
+})
 
 /*
 app.get ('/',(req,res) => {
