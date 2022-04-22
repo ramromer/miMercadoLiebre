@@ -362,9 +362,7 @@ footer .articulos i{
         height: 60px;
         width: auto;
     }
-    header aside{
-        flex-basis: 30%;
-    }
+    
     .headeractions{
         display: flex;       
         justify-content: space-around;
@@ -383,9 +381,10 @@ footer .articulos i{
         color: black;
     }
 
-    .actions li a:hover{
+    .actions li:hover{
         color: rgb(29, 46, 115);
-        font-size: larger;
+        transform: scale(1.15);
+        transition: all 300ms ease-in-out;
     }
     .user{
         display: flex;
@@ -400,9 +399,10 @@ footer .articulos i{
         text-decoration: none;
         color: black;
     }
-    .user li a:hover{
+    .user li:hover{
         color: rgb(29, 46, 115);
-        font-size: larger;
+        transform: scale(1.15);
+        transition: all 300ms ease-in-out;
     }
     
     .burger-menu{
